@@ -1,0 +1,9 @@
+Payee pObj=new Payee();
+		Account aObj=new Account();
+		pObj.setPayeeName(payeeObj.getPayeeName());
+		pObj.setNickName(payeeObj.getNickName());
+		aObj.setAccountNumber(payeeObj.getAccount().getAccountNumber());
+		pObj.setAccount(aObj);
+
+		payeeRepo.addPayee(pObj);
+		
